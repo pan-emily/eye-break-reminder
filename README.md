@@ -73,6 +73,28 @@ To make it clickable:
 5. Add the shortcut to your Dock.
 
 When clicked, it shows whether reminders are currently ON or OFF and lets you pause or resume.
+When reminders are on, it also shows an approximate countdown until the next break.
+
+## Optional Menu Bar Toggle
+
+For a live menu-bar countdown and quick actions, install [SwiftBar](https://swiftbar.app/).
+
+With Homebrew:
+
+```zsh
+brew install --cask swiftbar
+```
+
+Then copy the plugin into SwiftBar's plugins folder:
+
+```zsh
+mkdir -p "$HOME/Library/Application Support/SwiftBar/Plugins"
+cp swiftbar/eye-break.1m.sh "$HOME/Library/Application Support/SwiftBar/Plugins/"
+chmod +x "$HOME/Library/Application Support/SwiftBar/Plugins/eye-break.1m.sh"
+open -a SwiftBar
+```
+
+The menu bar item shows the next break countdown, plus actions for pause, resume, and run now.
 
 ## Uninstall
 
